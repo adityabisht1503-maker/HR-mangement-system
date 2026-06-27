@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { toast } from 'react-toastify'
-import { login } from '../../store/authSlice'
+
 import api from '../../api'
+import { login } from '../../store/authslice'
 
 const DEMOS = [
   { label: 'Admin',    email: 'admin@hrflow.com',    password: 'Admin@123!',    role: 'super_admin' },
