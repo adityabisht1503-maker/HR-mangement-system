@@ -1,0 +1,169 @@
+
+ .loader-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1050;
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.32s;
+}
+.dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+/* ================================================================
+   GLOBAL DARK THEME FIX — paste into src/index.css or App.css
+   ================================================================ */
+
+/* 1. Force dark on every layout wrapper your app might use */
+html, body, #root {
+  background: #080d14 !important;
+  color: #e2e8f0 !important;
+  min-height: 100vh;
+}
+
+/* 2. Kill any white content area — catches Tailwind, Bootstrap,
+      and custom class names */
+[class*="content"],
+[class*="layout"],
+[class*="main"],
+[class*="wrapper"],
+[class*="page"],
+[class*="container"] {
+  background: #080d14 !important;
+}
+
+/* 3. Dark inputs globally — fixes ALL pages at once */
+input,
+select,
+textarea {
+  background-color: #1e293b !important;
+  color: #e2e8f0 !important;
+  border-color: #334155 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #475569 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  border-color: #7c3aed !important;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15) !important;
+}
+
+/* 4. Kill Chrome autofill white flash */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #1e293b inset !important;
+  -webkit-text-fill-color: #e2e8f0 !important;
+  caret-color: #e2e8f0 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* 5. Select dropdown options */
+select option {
+  background-color: #1e293b !important;
+  color: #e2e8f0 !important;
+}
+
+/* 6. Date/time picker icon */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.8);
+  cursor: pointer;
+}
+
+/* 7. Bootstrap overrides — if you use Bootstrap cards/forms */
+.card {
+  background: #0f172a !important;
+  border-color: #1e293b !important;
+  color: #e2e8f0 !important;
+}
+
+.card-header,
+.card-footer {
+  background: #0f172a !important;
+  border-color: #1e293b !important;
+}
+
+.form-control,
+.form-select {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #1e293b !important;
+  border-color: #7c3aed !important;
+  color: #e2e8f0 !important;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15) !important;
+}
+
+.form-control::placeholder {
+  color: #475569 !important;
+}
+
+.form-label {
+  color: #64748b !important;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+/* Bootstrap nav pills */
+.nav-link {
+  color: #8b949e !important;
+}
+
+.nav-link.active {
+  background: #7c3aed !important;
+  color: #fff !important;
+}
+
+/* Bootstrap text utilities */
+.text-muted {
+  color: #475569 !important;
+}
+
+.text-white {
+  color: #f1f5f9 !important;
+}
+
+/* Bootstrap table */
+.table {
+  color: #e2e8f0 !important;
+}
+
+.table th,
+.table td {
+  border-color: #1e293b !important;
+}
+
+/* Input group */
+.input-group .form-control,
+.input-group .btn {
+  border-color: #334155 !important;
+}
