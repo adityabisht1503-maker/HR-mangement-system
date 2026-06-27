@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Outlet, NavLink, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { logout } from '../../store/authSlice'
+
 import { toast } from 'react-toastify'
 import NotificationBell from '../../NotificationBell'
+import { logout } from '../../store/authslice'
 
 const ADMIN_NAV = [
   { to: '/dashborad',   icon: 'speedometer2',  label: 'Dashboard'   },
