@@ -498,7 +498,7 @@ function AdminEmployeesView() {
                   disabled={deleting}
                 >
                   {deleting
-                    ? <><div style={{ ...S.spinner, width: 14, height: 14, borderTopColor: '#f87171', border: '2px solid rgba(239,68,68,0.2)', borderTopColor: '#f87171' }} /> Deleting…</>
+                    ? <><div style={{ ...S.spinner, width: 14, height: 14, border: '2px solid rgba(239,68,68,0.2)', borderTopColor: '#f87171' }} /> Deleting…</>
                     : <><i className="bi bi-trash3" /> Yes, Delete</>
                   }
                 </button>
