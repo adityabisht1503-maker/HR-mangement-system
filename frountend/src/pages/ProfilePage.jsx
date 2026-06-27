@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { toast, ToastContainer } from 'react-toastify'
 
-import { login } from '../store/authSlice.jsx'
 import { authAPI } from '../services/api.js'
+import { login } from '../store/authslice.jsx'
 
 
 const initials = (name = '') =>
