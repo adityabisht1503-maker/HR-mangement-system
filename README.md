@@ -6,7 +6,7 @@ A full-stack HR Management System designed to streamline employee management thr
 
 ## 🌐 Live Demo
 
-**Website:** https://your-live-demo-link.com
+**Website:** (https://hr-mangement-system-three.vercel.app/)
 
 ---
 
