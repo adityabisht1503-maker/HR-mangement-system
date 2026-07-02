@@ -21,8 +21,8 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.19.1",
-    "nodemailer": "^7.0.12",
     "puppeteer": "^24.34.0",
+    "resend": "^6.16.0",
     "validator": "^13.15.26"
   },
   "devDependencies": {
